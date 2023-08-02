@@ -1,4 +1,4 @@
-# AdOpt SDK
+# AdOpt Disclaimer Api SDK
 
 The AdOpt SDK is a powerful tool that allows you to manipulate the functions of the AdOpt tag, providing seamless integration with your applications. This SDK enables you to access and interact with various functionalities offered by the AdOpt platform.
 
@@ -7,7 +7,7 @@ The AdOpt SDK is a powerful tool that allows you to manipulate the functions of 
 You can install the AdOpt SDK via npm. Ensure that you have Node.js and npm installed on your system, and then run the following command:
 
 ```bash
-npm install adopt-sdk
+npm i @goadopt/disclaimer-api
 ```
 
 ## Functions
@@ -17,7 +17,7 @@ npm install adopt-sdk
 Retrieve information about the configured disclaimer.
 
 ```typescript
-import Adopt from "adopt-sdk";
+import Adopt from "@goadopt/disclaimer-api";
 
 const client = new Adopt({ disclaimerId: "your_disclaimer_id" });
 
@@ -36,7 +36,7 @@ client
 Retrieve the initial consent from the user.
 
 ```typescript
-import Adopt from "adopt-sdk";
+import Adopt from "@goadopt/disclaimer-api";
 
 const client = new Adopt({ disclaimerId: "your_disclaimer_id" });
 
@@ -62,7 +62,7 @@ client
 Update the user's consent.
 
 ```typescript
-import Adopt from "adopt-sdk";
+import Adopt from "@goadopt/disclaimer-api";
 
 const client = new Adopt({ disclaimerId: "your_disclaimer_id" });
 
@@ -90,24 +90,24 @@ client
 
 ### GetConsentData
 
-| Field          | Type                              | Description                                                                |
-| -------------- | --------------------------------- | -------------------------------------------------------------------------- |
-| consentTTL     | number                            | Time-to-live for the consent in seconds (retrived from getDislcaimerInfo). |
-| consentVersion | number                            | Version number of the consent (retrived from getDislcaimerInfo).           |
-| device         | "desktop" \| "tablet" \| "mobile" | The device type used by the visitor.                                       |
-| visitorId      | string (optional)                 | Unique identifier for the visitor (if available).                          |
+| Field          | Type                              | Description                                                                 |
+| -------------- | --------------------------------- | --------------------------------------------------------------------------- |
+| consentTTL     | number                            | Time-to-live for the consent in seconds (retrieved from getDislcaimerInfo). |
+| consentVersion | number                            | Version number of the consent (retrieved from getDislcaimerInfo).           |
+| device         | "desktop" \| "tablet" \| "mobile" | The device type used by the visitor.                                        |
+| visitorId      | string (optional)                 | Unique identifier for the visitor (if available).                           |
 
 ### UpdateConsentData
 
-| Field          | Type                              | Description                                                                |
-| -------------- | --------------------------------- | -------------------------------------------------------------------------- |
-| consentTTL     | number                            | Time-to-live for the consent in seconds (retrived from getDislcaimerInfo). |
-| consentVersion | number                            | Version number of the consent (retrived from getDislcaimerInfo).           |
-| device         | "desktop" \| "tablet" \| "mobile" | The device type used by the visitor.                                       |
-| eventType      | null                              | (Set to null for consent update).                                          |
-| optInTags      | Array\<string>                    | Tags for which the visitor opted-in.                                       |
-| optOutTags     | Array\<string>                    | Tags for which the visitor opted-out.                                      |
-| visitorId      | string (optional)                 | Unique identifier for the visitor (if available).                          |
+| Field          | Type                              | Description                                                                 |
+| -------------- | --------------------------------- | --------------------------------------------------------------------------- |
+| consentTTL     | number                            | Time-to-live for the consent in seconds (retrieved from getDislcaimerInfo). |
+| consentVersion | number                            | Version number of the consent (retrieved from getDislcaimerInfo).           |
+| device         | "desktop" \| "tablet" \| "mobile" | The device type used by the visitor.                                        |
+| eventType      | null                              | (Set to null for consent update).                                           |
+| optInTags      | Array\<string>                    | Tags for which the visitor opted-in.                                        |
+| optOutTags     | Array\<string>                    | Tags for which the visitor opted-out.                                       |
+| visitorId      | string (optional)                 | Unique identifier for the visitor (if available).                           |
 
 ## Getting Help
 

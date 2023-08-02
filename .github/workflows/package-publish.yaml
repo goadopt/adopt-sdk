@@ -25,4 +25,4 @@ jobs:
       - run: npm run build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: "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"
+          NODE_AUTH_TOKEN: "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"

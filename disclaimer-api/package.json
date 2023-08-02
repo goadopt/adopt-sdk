@@ -1,6 +1,6 @@
 {
   "name": "@goadopt/disclaimer-api",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
@@ -11,8 +11,7 @@
     "default": "./dist/index.modern.js"
   },
   "scripts": {
-    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
-    "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap"
   },
   "keywords": [
     "CMP",
