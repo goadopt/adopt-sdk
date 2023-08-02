@@ -4,15 +4,7 @@ The `adopt-sdk` is a powerful toolkit that enables seamless integration with our
 
 ## Installation
 
-To install the `adopt-sdk` package, you can simply add it as a dependency in your project's `package.json` file:
-
-```json
-"dependencies": {
-  "@goadopt/adopt-sdk": "latest"
-}
-```
-
-Alternatively, you can use the following npm command to install the package:
+You can use the following npm command to install the package:
 
 ```bash
 npm install @goadopt/disclaimer-api
