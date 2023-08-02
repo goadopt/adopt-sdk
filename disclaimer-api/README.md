@@ -67,7 +67,7 @@ import Adopt from "@goadopt/disclaimer-api";
 const client = new Adopt({ disclaimerId: "your_disclaimer_id" });
 
 const updateConsentData: UpdateConsentData = {
-  consentTTL: 86400,
+  consentTTL: 60,
   consentVersion: 2,
   device: "mobile",
   eventType: null,
