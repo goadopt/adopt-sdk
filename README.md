@@ -1,1 +1,1 @@
-# adopt-sdk
+# AdOpt SDK

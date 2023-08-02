@@ -1,0 +1,28 @@
+name: Publish Package to npmjs
+on:
+  push:
+    branches: [main]
+    paths:
+      - "disclaimer-api/**"
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+      env:
+        TF_WORKING_DIR: disclaimer-api
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: ${{ env.TF_WORKING_DIR }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+      - run: npm run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: "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"

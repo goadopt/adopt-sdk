@@ -1,6 +1,6 @@
 {
-  "name": "adopt-sdk",
-  "version": "1.0.1",
+  "name": "@adopt/disclaimer-api",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
