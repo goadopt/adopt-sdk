@@ -2,8 +2,6 @@ name: Publish Package to npmjs
 on:
   push:
     branches: [main]
-    paths:
-      - "disclaimer-api/**"
   workflow_dispatch:
 jobs:
   publish:
@@ -20,9 +18,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@goadopt"
       - run: npm ci
       - run: npm run build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: "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"
+          NODE_AUTH_TOKEN: "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"
