@@ -1,5 +1,5 @@
 import { Base } from "../base";
-// test1
+// test2
 const resourceName = "tag/disclaimer-info-v2";
 
 export class Disclaimer extends Base {
