@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TF_WORKING_DIR: disclaimer-api
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     defaults:
       run:
@@ -15,12 +16,6 @@ jobs:
         working-directory: ${{ env.TF_WORKING_DIR }}
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
       - run: npm ci
       - run: npm run build
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
