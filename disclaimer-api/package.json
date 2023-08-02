@@ -1,5 +1,5 @@
 {
-  "name": "disclaimer-api",
+  "name": "@goadopt/disclaimer-api",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -14,7 +14,28 @@
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
     "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
   },
-  "keywords": [],
+  "keywords": [
+    "CMP",
+    "Consent Management Platform",
+    "Consent SDK",
+    "GDPR",
+    "Data Privacy",
+    "User Consent",
+    "Cookie Consent",
+    "Consent Banner",
+    "Privacy Compliance",
+    "Consent Tracking",
+    "Consent Preferences",
+    "Consent Events",
+    "User Data Protection",
+    "Consent Management API",
+    "Consent Dialog",
+    "Data Subject Rights",
+    "User Consent Management",
+    "Cookie Compliance",
+    "Privacy Regulations",
+    "Opt-in / Opt-out Management"
+  ],
   "author": "AdOpt Team",
   "license": "MIT",
   "devDependencies": {
